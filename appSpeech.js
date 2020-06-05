@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
           var pendingSpeech = false;
           let mensaje = new SpeechSynthesisUtterance(textoSpeech);
           mensaje.lang = 'es-ES'
-          // mensaje.rate = 1;
+          mensaje.rate = 1;
           // mensaje.text = textoAEscuchar;
           // mensaje.pitch = 1;
           sysnt.speak(mensaje);
