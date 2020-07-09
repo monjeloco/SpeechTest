@@ -91,6 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
           // mensaje.text = textoAEscuchar;
           // mensaje.pitch = 1;
           sysnt.speak(mensaje);
+         setInterval(() => {
+            sysnt.resume();
+          }, 500);
           // Cuando se detenga (haciendo click en el botón) se ejecuta esto
           mediaRecorder.addEventListener("stop", () => {
             $audioFirma.style.display = 'block';
